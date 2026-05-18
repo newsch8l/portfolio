@@ -129,10 +129,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .scientist-popover-trigger {
+  -webkit-appearance: none;
   appearance: none;
   border: 0;
+  border-radius: 0;
   padding: 0;
   background: transparent;
+  box-shadow: none;
   color: inherit;
   font: inherit;
   line-height: inherit;
@@ -143,6 +146,13 @@ img { max-width: 100%; height: auto; display: block; }
 
 .scientist-popover-trigger:hover {
   opacity: 0.7;
+}
+
+.scientist-popover-trigger:focus,
+.scientist-popover-trigger:focus-visible {
+  outline: none;
+  border: 0;
+  box-shadow: none;
 }
 
 .scientist-popover-panel {
