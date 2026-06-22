@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>core — плеер внутри Telegram — Портфолио Кирилла</title>
+  <link rel="stylesheet" href="../css/style.css?v=core-20260622">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-header-title">✮ Моё портфолио ✮</a>
+  </div>
+</header>
+
+<img class="page-cover core-page-cover" loading="eager" fetchpriority="high" decoding="async" src="../assets/projects/core/core-hero.webp" alt="core — плеер внутри Telegram">
+
+<div class="page-wrapper">
+
+  <h1 class="page-title">core — плеер внутри Telegram</h1>
+
+  <div class="project-meta">
+    <span class="tag tag-gray">2026</span>
+    <span>Собрал бота и мини-эпп, чтобы хранить и слушать музыку в Telegram</span>
+  </div>
+
+  <p>Заметил проблему: в Telegram уже слушают и сохраняют музыку, но сам мессенджер почти не помогает собирать её в медиатеку. Треки теряются в избранном, чатах и каналах.</p>
+
+  <p>Поэтому я сделал <strong><a href="https://t.me/coreplay3rbot" target="_blank">core</a></strong> — бота и плеер с плейлистами</p>
+
+  <p class="task-label">Задача</p>
+  <p class="task-text">Собрать бота и мини-эпп, чтобы хранить, сортировать и слушать музыку в Telegram</p>
+
+  <p class="task-label">Что сделал</p>
+
+  <details class="toggle-h3 core-work-item" open>
+    <summary>Придумал основной пользовательский сценарий core</summary>
+    <div class="toggle-content">
+      <p class="core-work-text">Отправляешь аудио боту → бот подтверждает добавление → трек появляется в core-плеере</p>
+      <div class="core-shot-grid core-shot-grid-2">
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/scenario-1.webp" alt="Аудио отправлено боту core">
+          <figcaption>Отправляешь аудио боту и получаешь подтверждение</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/scenario-2.webp" alt="Треки появились в core-плеере">
+          <figcaption>Треки появляются в треклисте</figcaption>
+        </figure>
+      </div>
+    </div>
+  </details>
+
+  <details class="toggle-h3 core-work-item" open>
+    <summary>Проработал коммуникацию с ботом: сценарий, сообщения и кнопки</summary>
+    <div class="toggle-content">
+      <p class="core-shot-group-label">Базовая коммуникация</p>
+      <div class="core-shot-grid core-shot-grid-3">
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/bot-welcome.webp" alt="Приветствие в боте core">
+          <figcaption>Приветствие</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/bot-errors.webp" alt="Ошибка и подсказка в боте core">
+          <figcaption>Ошибки и подсказки</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/bot-broadcast.webp" alt="Рассылка пользователям core">
+          <figcaption>Рассылка пользователям, которые уже добавили треки</figcaption>
+        </figure>
+      </div>
+
+      <p class="core-shot-group-label">Сложные цепочки</p>
+      <div class="core-shot-grid core-shot-grid-3">
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/playlist-choice.webp" alt="Выбор плейлиста в боте core">
+          <figcaption><strong>1. Выбор плейлиста:</strong> создать новый или выбрать существующий</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/playlist-create-bot.webp" alt="Создание плейлиста в боте core">
+          <figcaption><strong>2. Создание плейлиста:</strong> своё название или готовый вариант</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/playlist-confirm.webp" alt="Подтверждение добавления трека в плейлист">
+          <figcaption><strong>3. Подтверждение:</strong> трек добавлен в выбранный плейлист</figcaption>
+        </figure>
+      </div>
+    </div>
+  </details>
+
+  <details class="toggle-h3 core-work-item" open>
+    <summary>Продумал UX плеера</summary>
+    <div class="toggle-content">
+      <div class="core-shot-grid core-shot-grid-2">
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/ux-onboarding.webp" alt="Стартовый трек в core для нового пользователя">
+          <figcaption><strong>Онбординг:</strong> у каждого пользователя есть стартовый трек для быстрого погружения в продукт</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/ux-playlists.webp" alt="Экран плейлистов в core">
+          <figcaption><strong>Экран плейлистов:</strong> каждый плейлист получает свою сгенерированную обложку</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/ux-new-playlist.webp" alt="Создание нового плейлиста в core">
+          <figcaption><strong>Новый плейлист:</strong> пользователь вводит своё название или оставляет готовый вариант</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="../assets/projects/core/ux-search.webp" alt="Поиск по трекам и плейлистам в core">
+          <figcaption>Поиск по трекам и плейлистам</figcaption>
+        </figure>
+      </div>
+    </div>
+  </details>
+
+  <details class="toggle-h3 core-work-item" open>
+    <summary>Разработал визуальный стиль плеера</summary>
+    <div class="toggle-content">
+      <p class="core-work-text">Культовый дизайн iPod Classic + неоморфизм + живой динамик в сердцевине iPod-колеса</p>
+
+      <figure class="core-demo-figure">
+        <video class="core-demo-video" autoplay muted loop playsinline preload="metadata" poster="../assets/projects/core/core-demo-poster.jpg" aria-label="Демонстрация плеера core">
+          <source src="../assets/projects/core/core-demo.mp4" type="video/mp4">
+        </video>
+        <figcaption class="core-demo-cta-caption">
+          <a href="https://t.me/coreplay3rbot" target="_blank">→ Открыть core ←</a>
+        </figcaption>
+      </figure>
+    </div>
+  </details>
+
+  <!-- NAV -->
+  <nav class="project-nav">
+    <a href="yandex-plus.html">← Предыдущий кейс</a>
+    <a href="../index.html">На главную</a>
+    <a href="cplus.html">Следующий кейс →</a>
+  </nav>
+
+</div>
+</body>
+</html>
